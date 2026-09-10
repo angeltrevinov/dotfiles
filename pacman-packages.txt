@@ -168,6 +168,7 @@ sudo
 switcheroo-control
 sysfsutils
 texinfo
+tmux
 tree-sitter-cli
 ttf-bitstream-vera
 ttf-dejavu
