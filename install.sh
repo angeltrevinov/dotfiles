@@ -100,7 +100,6 @@ install_configs() {
     # Vault settings (live vault is at ~/My Notes)
     link_config "$DOTFILES_DIR/obsidian/vault/.obsidian/appearance.json"        "$HOME/My Notes/.obsidian/appearance.json"
     link_config "$DOTFILES_DIR/obsidian/vault/.obsidian/app.json"               "$HOME/My Notes/.obsidian/app.json"
-    link_config "$DOTFILES_DIR/obsidian/vault/.obsidian/bookmarks.json"         "$HOME/My Notes/.obsidian/bookmarks.json"
     link_config "$DOTFILES_DIR/obsidian/vault/.obsidian/community-plugins.json" "$HOME/My Notes/.obsidian/community-plugins.json"
     link_config "$DOTFILES_DIR/obsidian/vault/.obsidian/core-plugins.json"      "$HOME/My Notes/.obsidian/core-plugins.json"
     link_config "$DOTFILES_DIR/obsidian/vault/.obsidian/graph.json"             "$HOME/My Notes/.obsidian/graph.json"
