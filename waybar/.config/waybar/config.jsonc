@@ -2,9 +2,13 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "network", "bluetooth", "hyprland/language", "battery"],
+    "modules-right": ["pulseaudio", "network", "bluetooth", "tray", "hyprland/language", "battery"],
     "hyprland/window": {
         "max-length": 50
+    },
+    "tray": {
+        "spacing": 8,
+        "icon-size": 14
     },
     "battery": {
         "format": "{capacity}% {icon}",

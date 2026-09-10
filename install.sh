@@ -93,6 +93,20 @@ install_configs() {
     # Neovim (entire directory via symlink)
     link_config "$DOTFILES_DIR/nvim/.config/nvim" "$HOME/.config/nvim"
 
+    # Obsidian (app config + vault settings)
+    link_config "$DOTFILES_DIR/obsidian/.config/obsidian/obsidian.json" "$HOME/.config/obsidian/obsidian.json"
+    link_config "$DOTFILES_DIR/obsidian/.config/obsidian/Preferences"   "$HOME/.config/obsidian/Preferences"
+
+    # Vault settings (live vault is at ~/My Notes)
+    link_config "$DOTFILES_DIR/obsidian/vault/.obsidian/appearance.json"        "$HOME/My Notes/.obsidian/appearance.json"
+    link_config "$DOTFILES_DIR/obsidian/vault/.obsidian/app.json"               "$HOME/My Notes/.obsidian/app.json"
+    link_config "$DOTFILES_DIR/obsidian/vault/.obsidian/bookmarks.json"         "$HOME/My Notes/.obsidian/bookmarks.json"
+    link_config "$DOTFILES_DIR/obsidian/vault/.obsidian/community-plugins.json" "$HOME/My Notes/.obsidian/community-plugins.json"
+    link_config "$DOTFILES_DIR/obsidian/vault/.obsidian/core-plugins.json"      "$HOME/My Notes/.obsidian/core-plugins.json"
+    link_config "$DOTFILES_DIR/obsidian/vault/.obsidian/graph.json"             "$HOME/My Notes/.obsidian/graph.json"
+    link_config "$DOTFILES_DIR/obsidian/vault/.obsidian/templates.json"         "$HOME/My Notes/.obsidian/templates.json"
+    link_config "$DOTFILES_DIR/obsidian/vault/.obsidian/types.json"             "$HOME/My Notes/.obsidian/types.json"
+
     ok "All configs linked"
 }
 

@@ -1,0 +1,13 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "Media": "text",
+    "Themes": "multitext",
+    "Official link": "multitext",
+    "Pirate Link": "multitext",
+    "type": "multitext",
+    "score": "number"
+  }
+}

@@ -132,6 +132,7 @@ nvidia-prime
 nvidia-settings
 nvidia-utils
 nwg-look
+obsidian
 opencl-nvidia
 opencode
 openssh
