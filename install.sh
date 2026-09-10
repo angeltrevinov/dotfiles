@@ -93,9 +93,6 @@ install_configs() {
     # Neovim (entire directory via symlink)
     link_config "$DOTFILES_DIR/nvim/.config/nvim" "$HOME/.config/nvim"
 
-    # Obsidian: settings stored in repo for manual sync, no symlinks
-    info "Obsidian settings are stored in $DOTFILES_DIR/obsidian (manual sync)"
-
     ok "All configs linked"
 }
 
