@@ -135,6 +135,7 @@ nwg-look
 obsidian
 opencl-nvidia
 opencode
+openrgb
 openssh
 os-prober
 pacman-contrib
@@ -170,6 +171,7 @@ switcheroo-control
 sysfsutils
 texinfo
 tmux
+tailscale
 tree-sitter-cli
 ttf-bitstream-vera
 ttf-dejavu
@@ -192,6 +194,7 @@ waybar
 wget
 which
 wireplumber
+wl-clipboard
 wpa_supplicant
 xdg-desktop-portal-hyprland
 xdg-user-dirs
