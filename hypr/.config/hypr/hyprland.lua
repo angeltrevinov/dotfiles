@@ -244,6 +244,10 @@ hl.config({
 
         touchpad = {
             natural_scroll = false,
+
+            -- Two-finger tap/press = right-click (was broken when left unset
+            -- after the Hyprland 0.56 Lua config update).
+            clickfinger_behavior = true,
         },
     },
 })
