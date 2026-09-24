@@ -29,11 +29,27 @@ hl.monitor({
     scale    = "1.2",
 })
 
+-- Keep HDMI at the same global coordinate when the laptop panel is disabled.
+-- This prevents Waybar 0.15's existing layer surface from becoming offset.
+hl.monitor({
+    output   = "HDMI-A-1",
+    mode     = "preferred",
+    position = "1600x0",
+    scale    = 1,
+})
+
 hl.monitor({
     output   = "",
     mode     = "preferred",
     position = "auto",
     scale    = "auto",
+})
+
+-- Lid switch labels are reversed on some ASUS models. Use the generic switch
+-- event only as a trigger; the helper asks logind for the authoritative state.
+hl.bind("switch:Lid Switch", hl.dsp.exec_cmd("bash ~/.config/hypr/scripts/hypr-clamshell.sh"), {
+    locked = true,
+    description = "Move workspaces to the external monitor when the lid closes",
 })
 
 
@@ -61,6 +77,7 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("waybar")
   hl.exec_cmd("systemctl --user start hyprpolkitagent")
   hl.exec_cmd("hypridle")
+  hl.exec_cmd("bash ~/.config/hypr/scripts/hypr-clamshell.sh --sync")
 end)
 
 

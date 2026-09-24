@@ -90,7 +90,9 @@ dotfiles/
 ├── hypr/.config/hypr/
 │   ├── hyprland.lua
 │   ├── hypridle.conf
-│   └── hyprlock.conf
+│   ├── hyprlock.conf
+│   └── scripts/
+│       └── hypr-clamshell.sh
 ├── waybar/.config/waybar/
 │   ├── config.jsonc
 │   └── style.css
