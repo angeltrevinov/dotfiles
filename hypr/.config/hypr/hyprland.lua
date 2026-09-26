@@ -316,8 +316,10 @@ hl.bind(secondMod .. " + right", hl.dsp.window.move({ direction = "right" }))
 hl.bind(secondMod .. " + up",    hl.dsp.window.move({ direction = "up" }))
 hl.bind(secondMod .. " + down",  hl.dsp.window.move({ direction = "down" }))
 
--- Toggle Spanish/English with both Alt keys on the Bluetooth Keychron M6.
-hl.bind("Alt_L + Alt_R", hl.dsp.exec_cmd("hyprctl switchxkblayout active next"), {
+-- Toggle Spanish/English with right Alt on the Bluetooth Keychron M6.
+-- hyprlang only resolves the final key in a bind string, so this is a plain
+-- single-key bind; a two-key Alt chord is not expressible here.
+hl.bind("Alt_R", hl.dsp.exec_cmd("hyprctl switchxkblayout active next"), {
     locked = true,
     device = {
         inclusive = true,
