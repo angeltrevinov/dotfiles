@@ -310,6 +310,22 @@ hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
+-- Move the active window with mainMod + SHIFT + arrow keys
+hl.bind(secondMod .. " + left",  hl.dsp.window.move({ direction = "left" }))
+hl.bind(secondMod .. " + right", hl.dsp.window.move({ direction = "right" }))
+hl.bind(secondMod .. " + up",    hl.dsp.window.move({ direction = "up" }))
+hl.bind(secondMod .. " + down",  hl.dsp.window.move({ direction = "down" }))
+
+-- Toggle Spanish/English with both Alt keys on the Bluetooth Keychron M6.
+hl.bind("LALT + RALT", hl.dsp.exec_cmd("hyprctl switchxkblayout active next"), {
+    locked = true,
+    device = {
+        inclusive = true,
+        list = { "keychron-m6-8k-keyboard" },
+    },
+    description = "Toggle Spanish/English on the Keychron M6",
+})
+
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 for i = 1, 10 do
