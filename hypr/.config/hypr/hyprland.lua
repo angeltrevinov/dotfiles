@@ -317,7 +317,7 @@ hl.bind(secondMod .. " + up",    hl.dsp.window.move({ direction = "up" }))
 hl.bind(secondMod .. " + down",  hl.dsp.window.move({ direction = "down" }))
 
 -- Toggle Spanish/English with both Alt keys on the Bluetooth Keychron M6.
-hl.bind("LALT + RALT", hl.dsp.exec_cmd("hyprctl switchxkblayout active next"), {
+hl.bind("Alt_L + Alt_R", hl.dsp.exec_cmd("hyprctl switchxkblayout active next"), {
     locked = true,
     device = {
         inclusive = true,
