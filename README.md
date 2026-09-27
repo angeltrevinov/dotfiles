@@ -11,6 +11,7 @@ CachyOS (Arch) + Hyprland configuration with an automated install script.
 | Neovim | `nvim/` | LazyVim setup with LSP + formatting |
 | Rofi | `rofi/` | App launcher |
 | Fish | `fish/` | Shell config |
+| VS Code | `code/` | User settings, keybindings, MCP servers |
 
 ## Fresh Install (Arch/CachyOS)
 
@@ -113,8 +114,12 @@ dotfiles/
 │           └── snacks-animated-scrolling-off.lua
 ├── rofi/.config/rofi/
 │   └── config.rasi
-└── fish/.config/fish/
-    └── config.fish
+├── fish/.config/fish/
+│   └── config.fish
+└── code/.config/Code/User/
+    ├── settings.json
+    ├── keybindings.json
+    └── mcp.json
 ```
 
 ## License

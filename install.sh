@@ -94,6 +94,11 @@ install_configs() {
     # Neovim (entire directory via symlink)
     link_config "$DOTFILES_DIR/nvim/.config/nvim" "$HOME/.config/nvim"
 
+    # VS Code (user config only; skip profiles/snippets to avoid machine-specific state)
+    link_config "$DOTFILES_DIR/code/.config/Code/User/settings.json"   "$HOME/.config/Code/User/settings.json"
+    link_config "$DOTFILES_DIR/code/.config/Code/User/keybindings.json" "$HOME/.config/Code/User/keybindings.json"
+    link_config "$DOTFILES_DIR/code/.config/Code/User/mcp.json"        "$HOME/.config/Code/User/mcp.json"
+
     ok "All configs linked"
 }
 

@@ -1,0 +1,224 @@
+{
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu-20.04 (WSL)": {
+            "path": "C:\\Windows\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu-20.04"
+            ]
+        },
+        "Ubuntu (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "editor.fontSize": 16,
+    "editor.rulers": [
+        60, 120
+    ],
+    "git.enableSmartCommit": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "redhat.telemetry.enabled": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "prettier.tabWidth": 4,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "svg.preview.mode": "svg",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.guides.bracketPairs": true,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.quickSuggestions": {
+        "comments": "on"
+    },
+    "git.autofetch": true,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "gitlens.graph.layout": "editor",
+    "explorer.confirmDelete": false,
+    "codesandbox.currentWorkspace": "e72f2f79-98ad-40e9-b4bf-4582d5db257c",
+    "remote.SSH.remotePlatform": {
+        "sandbox.6d6t2h.csb": "linux"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "gitlens.graph.minimap.enabled": false,
+    "git.confirmSync": false,
+    "editor.accessibilitySupport": "off",
+    "svelte.enable-ts-plugin": true,
+    "explorer.confirmDragAndDrop": false,
+    "chat.editing.alwaysSaveWithGeneratedChanges": true,
+    "chat.agent.enabled": true,
+    "editor.language.colorizedBracketPairs": [
+
+    ],
+    "workbench.settings.applyToAllProfiles": [
+        
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.allowForcePush": true,
+    "git.allowNoVerifyCommit": true,
+    "git.closeDiffOnOperation": true,
+    "git.confirmNoVerifyCommit": false,
+    "git.ignoreLimitWarning": true,
+    "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true,
+        "/var/folders/nj/5ss8bcx51837j5s0y8yvcg100000gn/T/postman-collections-post-response.instructions.md": true,
+        "/var/folders/nj/5ss8bcx51837j5s0y8yvcg100000gn/T/postman-collections-pre-request.instructions.md": true,
+        "/var/folders/nj/5ss8bcx51837j5s0y8yvcg100000gn/T/postman-folder-post-response.instructions.md": true,
+        "/var/folders/nj/5ss8bcx51837j5s0y8yvcg100000gn/T/postman-folder-pre-request.instructions.md": true,
+        "/var/folders/nj/5ss8bcx51837j5s0y8yvcg100000gn/T/postman-http-request-post-response.instructions.md": true,
+        "/var/folders/nj/5ss8bcx51837j5s0y8yvcg100000gn/T/postman-http-request-pre-request.instructions.md": true,
+        "C:\\Users\\angel\\AppData\\Local\\Temp\\postman-collections-post-response.instructions.md": true,
+        "C:\\Users\\angel\\AppData\\Local\\Temp\\postman-collections-pre-request.instructions.md": true,
+        "C:\\Users\\angel\\AppData\\Local\\Temp\\postman-folder-post-response.instructions.md": true,
+        "C:\\Users\\angel\\AppData\\Local\\Temp\\postman-folder-pre-request.instructions.md": true,
+        "C:\\Users\\angel\\AppData\\Local\\Temp\\postman-http-request-post-response.instructions.md": true,
+        "C:\\Users\\angel\\AppData\\Local\\Temp\\postman-http-request-pre-request.instructions.md": true
+    },
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "editor.aiStats.enabled": true,
+    "docker.extension.enableComposeLanguageServer": false,
+    "mdb.mcp.server": "prompt",
+    "chat.mcp.discovery.enabled": {
+        "claude-desktop": true,
+        "windsurf": true,
+        "cursor-global": true,
+        "cursor-workspace": true
+    },
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "terminal.explorerKind": "both",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "/usr/bin/bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "sh": {
+            "path": "/bin/sh"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "chat.mcp.gallery.enabled": true,
+    "chat.mcp.autostart": "never",
+    "obsidian-md-vsc.defaultVault": "Notes",
+    "obsidian-md-vsc.defaultVaultPath": "/home/angeltrevinov/Documents/Obsidian/Notes",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
+    "gitblame.pluralWebPathSubstrings": [
+        "bitbucket",
+        "atlassian"
+    ],
+    "obsidian-md-vsc.defaultNote": "Home",
+    "security.promptForLocalFileProtocolHandling": false,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "terminal.integrated.initialHint": false,
+    "chat.tools.terminal.autoApprove": {
+        "npx -y modern-web-guidance@latest": true,
+        "gh": true,
+        "docker compose": true,
+        "git add": true,
+        "git commit": true,
+        "git push": true,
+        "git checkout": true
+    },
+    "yaml.disableSchemaDetection": [
+        "**/.github/workflows/*.yml",
+        "**/.github/workflows/*.yaml",
+        "**/.gitea/workflows/*.yml",
+        "**/.gitea/workflows/*.yaml",
+        "**/.forgejo/workflows/*.yml",
+        "**/.forgejo/workflows/*.yaml"
+    ],
+    "chat.viewSessions.orientation": "stacked",
+    "extensions.supportAgentsWindow": {
+        "ltmoerdani.opencode-copilot-chat": true
+    },
+}

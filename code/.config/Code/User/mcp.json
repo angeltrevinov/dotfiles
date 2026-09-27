@@ -1,0 +1,58 @@
+{
+	"servers": {
+		"github": {
+			"gallery": true,
+			"url": "https://api.githubcopilot.com/mcp/",
+			"type": "http"
+		},
+		"chromedevtools/chrome-devtools-mcp": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"chrome-devtools-mcp@latest"
+			]
+		},
+		"figma": {
+			"type": "http",
+			"url": "http://127.0.0.1:3845/mcp",
+			"gallery": true,
+			"version": "0.0.1"
+		},
+		"ticktick": {
+			"url": "https://mcp.ticktick.com",
+			"type": "http"
+		}
+	},
+	"inputs": [
+		{
+			"id": "browser_url",
+			"type": "promptString",
+			"description": "Optional: connect to an already-running Chrome (remote debugging / port-forward). Example: http://127.0.0.1:9222",
+			"password": false
+		},
+		{
+			"id": "headless",
+			"type": "promptString",
+			"description": "Run Chrome headless (true/false). Default: false",
+			"password": false
+		},
+		{
+			"id": "chrome_executable_path",
+			"type": "promptString",
+			"description": "Path to a specific Chrome/Chromium binary.",
+			"password": false
+		},
+		{
+			"id": "isolated",
+			"type": "promptString",
+			"description": "Use a temporary user-data-dir (true/false). Default: false",
+			"password": false
+		},
+		{
+			"id": "chrome_channel",
+			"type": "promptString",
+			"description": "Chrome channel: stable | canary | beta | dev (default: stable).",
+			"password": false
+		}
+	]
+}
