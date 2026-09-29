@@ -1,0 +1,18 @@
+{
+  "github": {
+    "type": "remote",
+    "url": "https://api.githubcopilot.com/mcp/"
+  },
+  "chrome-devtools": {
+    "type": "local",
+    "command": ["npx", "chrome-devtools-mcp@latest"]
+  },
+  "figma": {
+    "type": "remote",
+    "url": "http://127.0.0.1:3845/mcp"
+  },
+  "ticktick": {
+    "type": "remote",
+    "url": "https://mcp.ticktick.com"
+  }
+}

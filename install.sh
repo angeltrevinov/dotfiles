@@ -102,6 +102,28 @@ install_configs() {
     ok "All configs linked"
 }
 
+# ─── MCP Servers ──────────────────────────────────────────────────────
+
+install_mcp_servers() {
+    info "Installing MCP server configs..."
+
+    local mcp_dir="$DOTFILES_DIR/mcp"
+    if [[ ! -f "$mcp_dir/mcp-servers.json" ]]; then
+        warn "mcp/mcp-servers.json not found, skipping"
+        return
+    fi
+
+    # Run the sync script to generate all AI tool configs
+    if [[ -f "$mcp_dir/sync.sh" ]]; then
+        bash "$mcp_dir/sync.sh"
+    else
+        warn "mcp/sync.sh not found, skipping"
+        return
+    fi
+
+    ok "MCP server configs installed"
+}
+
 # ─── Main ─────────────────────────────────────────────────────────────
 
 usage() {
@@ -111,6 +133,7 @@ Usage: $0 [OPTIONS]
 Options:
   --packages-only    Install packages only, skip configs
   --configs-only     Install configs only, skip packages
+  --mcp-only         Install MCP server configs only
   --aur-only         Install AUR packages only
   --list-packages    Print package lists without installing
   -y, --yes          Skip confirmation prompt
@@ -120,18 +143,20 @@ Examples:
   $0                  # Install everything (packages + configs)
   $0 --configs-only   # Only link config files
   $0 --packages-only  # Only install packages
+  $0 --mcp-only       # Only install MCP server configs
   $0 --list-packages  # Show what would be installed
 EOF
 }
 
 main() {
-    local packages=true configs=true yes=false
+    local packages=true configs=true mcp=true yes=false
 
     while [[ $# -gt 0 ]]; do
         case "$1" in
-            --packages-only) configs=false ;;
-            --configs-only)  packages=false ;;
-            --aur-only)      packages=false; configs=false; install_aur_packages; exit 0 ;;
+            --packages-only) configs=false; mcp=false ;;
+            --configs-only)  packages=false; mcp=false ;;
+            --mcp-only)      packages=false; configs=false ;;
+            --aur-only)      packages=false; configs=false; mcp=false; install_aur_packages; exit 0 ;;
             --list-packages) echo "=== Pacman packages ==="; cat "$DOTFILES_DIR/pacman-packages.txt"; echo; echo "=== AUR packages ==="; cat "$DOTFILES_DIR/yay-packages.txt"; exit 0 ;;
             -y|--yes)        yes=true ;;
             -h|--help)       usage; exit 0 ;;
@@ -160,6 +185,10 @@ main() {
 
     if [[ "$configs" == true ]]; then
         install_configs
+    fi
+
+    if [[ "$mcp" == true ]]; then
+        install_mcp_servers
     fi
 
     echo
