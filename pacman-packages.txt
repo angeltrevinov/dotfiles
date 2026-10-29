@@ -63,6 +63,7 @@ git
 github-cli
 glances
 gnome-themes-extra
+grim
 gst-libav
 gst-plugin-pipewire
 gst-plugin-va
@@ -161,8 +162,10 @@ ripgrep
 rofi
 rsync
 s-nail
+satty
 sg3_utils
 shelly
+slurp
 smartmontools
 snapper
 sof-firmware

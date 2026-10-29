@@ -300,6 +300,14 @@ hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(launcher))
 hl.bind(secondMod .. " + SPACE", hl.dsp.exec_cmd(runner))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
+
+-- Screenshot: Print = drag a region, then annotate in satty.
+-- In satty, Enter copies to the clipboard and saves to ~/Pictures/Screenshots,
+-- Esc cancels. The script also accepts "full" and "active" modes.
+hl.bind("Print", hl.dsp.exec_cmd("bash ~/.config/hypr/scripts/screenshot.sh region"), {
+    description = "Screenshot a region and annotate it with satty",
+})
+
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 
@@ -424,6 +432,16 @@ hl.window_rule({
 
     move  = "20 monitor_h-120",
     float = true,
+})
+
+-- Satty (screenshot annotator): float it so it is usable without a tiling slot
+hl.window_rule({
+    name  = "satty-float",
+    match = { class = "com.gabm.satty" },
+
+    float   = true,
+    center  = true,
+    no_anim = true,
 })
 
 -- Generic floating TUI apps

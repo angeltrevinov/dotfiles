@@ -80,6 +80,7 @@ install_configs() {
     link_config "$DOTFILES_DIR/hypr/.config/hypr/hypridle.conf" "$HOME/.config/hypr/hypridle.conf"
     link_config "$DOTFILES_DIR/hypr/.config/hypr/hyprlock.conf" "$HOME/.config/hypr/hyprlock.conf"
     link_config "$DOTFILES_DIR/hypr/.config/hypr/scripts/hypr-clamshell.sh" "$HOME/.config/hypr/scripts/hypr-clamshell.sh"
+    link_config "$DOTFILES_DIR/hypr/.config/hypr/scripts/screenshot.sh"     "$HOME/.config/hypr/scripts/screenshot.sh"
 
     # Waybar
     link_config "$DOTFILES_DIR/waybar/.config/waybar/config.jsonc" "$HOME/.config/waybar/config.jsonc"
